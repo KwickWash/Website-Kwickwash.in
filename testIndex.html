@@ -1,0 +1,68 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        p {
+            position: absolute;
+        }
+
+        .block1 {
+            opacity: 0;
+            animation: fadeIn 20s infinite;
+            
+        }
+
+        .block2 {
+            opacity: 0;
+            animation: fadeIn 20s infinite;
+            animation-delay: 50s;
+        }
+
+        .block3 {
+            opacity: 0;
+            animation: fadeIn 20s infinite;
+            animation-delay: 50s;
+        }
+
+        @keyframes fadeIn {
+            20% {
+                opacity: 0;
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            60% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <script src="https://stacksnippets.net/scripts/snippet-javascript-console.min.js?v=1"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="block1">
+            <p>
+                This is line 1.
+            </p>
+        </div>
+
+        <div class="block2">
+            <p>
+                This is line 2.
+            </p>
+        </div>
+
+        <div class="block3">
+            <p>
+                This is line 3.
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+    </script>
+</body>
+</html>

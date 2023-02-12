@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Price List - Kwickwash</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="rudhisasmito.com">
+
+    <!-- ==============================================
+    Favicons
+    =============================================== -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+    <!-- ==============================================
+    CSS VENDOR
+    =============================================== -->
+    <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/vendor/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/magnific-popup.css">
+    <link href="http://www.sainathuniversity.com/css/slick.css" rel="stylesheet" />
+
+    <!-- ==============================================
+    Custom Stylesheet
+    =============================================== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script type="text/javascript" src="js/vendor/modernizr.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Load page -->
+    <div class="animationload">
+        <div class="loader"></div>
+    </div>
+
+    <!-- HEADER -->
+    <div id="ctrHeader"></div>
+
+    <!-- BANNER -->
+    <div class="section banner-page" style="        background: #F0E400 url('../images/topheader/2.png') bottom center no-repeat;">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="title-page" style="color:transparent;">About Us</div>
+                    <ol class="breadcrumb">
+                        <li style="color:transparent;"><a style="color:transparent;" href="index.html">Home</a></li>
+                        <li style="color:transparent;" class="active">About Us</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section pad">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="col-sm-3 col-md-3"></div>
+                    <div class="col-sm-3 col-md-3">
+                        <label>Select City</label>
+                        <select id="ucity" class="form-control" onchange="callArea1();">
+                        </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3">
+                        <label>Area</label>
+                        <select id="uarea" class="form-control" onchange="callSerPro();">
+                        </select>
+                    </div>
+                    <div class="col-sm-3 col-md-3"></div>
+                </div>
+
+                <!--<div class="col-sm-12 col-md-12">
+                    <h3 class="section-heading">Monthly Plan</h3>
+                </div>
+                <div class="col-sm-4 col-md-4">
+
+
+
+                    <div class="panel panel-pricing">
+                        <header class="panel-heading">
+                            <h3>BASIC PLAN</h3>
+                            <div class="price">
+                                <sup>$</sup>20<small>/ month</small>
+                            </div>
+                        </header>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Lorem ipsum dolor sit amet</td></tr>
+                                    <tr><td>Consectetur adipisicing elit</td></tr>
+                                    <tr><td>Sed do eiusmod tempor</td></tr>
+                                    <tr><td>Iincididunt ut labore</td></tr>
+                                    <tr><td>Dolore magna aliqua</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#" class="btn btn-secondary">Order Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-pricing">
+                        <header class="panel-heading">
+                            <h3>SILVER PLAN</h3>
+                            <div class="price">
+                                <sup>$</sup>40<small>/ month</small>
+                            </div>
+                        </header>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Lorem ipsum dolor sit amet</td></tr>
+                                    <tr><td>Consectetur adipisicing elit</td></tr>
+                                    <tr><td>Sed do eiusmod tempor</td></tr>
+                                    <tr><td>Iincididunt ut labore</td></tr>
+                                    <tr><td>Dolore magna aliqua</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#" class="btn btn-secondary">Order Now</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 col-md-4">
+
+                    <div class="panel panel-pricing">
+                        <header class="panel-heading">
+                            <h3>GOLD PLAN</h3>
+                            <div class="price">
+                                <sup>$</sup>80<small>/ month</small>
+                            </div>
+                        </header>
+                        <div class="panel-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr><td>Lorem ipsum dolor sit amet</td></tr>
+                                    <tr><td>Consectetur adipisicing elit</td></tr>
+                                    <tr><td>Sed do eiusmod tempor</td></tr>
+                                    <tr><td>Iincididunt ut labore</td></tr>
+                                    <tr><td>Dolore magna aliqua</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel-footer">
+                            <a href="#" class="btn btn-secondary">Order Now</a>
+                        </div>
+                    </div>
+
+                </div>-->
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12">
+                    <h2 class="section-heading">
+                        Service & Product Wise Pricing
+                    </h2>
+                </div>
+
+                <div id="service_Product_List"></div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- CTA -->
+    <div class="section pad cta-bgc">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-12">
+                    <div class="cta-content">
+                        <h3 class="cta-title-3">Ready to book your cleaning?</h3>
+                    </div>
+                    <div class="cta-action"><a href="#" class="btn btn-white" title="Learn More">Contact Us</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAPS -->
+    <div id="ctrMap"></div>
+
+    <!-- FOOTER SECTION -->
+    <div id="ctrFooter" style="position: relative; z-index: 9999; top: -51px;"></div>
+
+    <!-- JS VENDOR -->
+    <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.superslides.js"></script>
+    <script type="text/javascript" src="js/vendor/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap-hover-dropdown.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.magnific-popup.min.js"></script>
+
+    <!-- sendmail -->
+    <script type="text/javascript" src="js/vendor/validator.min.js"></script>
+    <script type="text/javascript" src="js/vendor/form-scripts.js"></script>
+
+    <script type='text/javascript' src='https://maps.google.com/maps/api/js?sensor=false&amp;ver=4.1.5'></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</body>
+</html>
